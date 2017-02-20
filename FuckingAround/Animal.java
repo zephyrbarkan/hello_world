@@ -1,4 +1,5 @@
 public class Animal {
+	//class used to create heirarchy to figure out inheritance 
 	public String name;
 	private int size;
 	public String sound = "default";
