@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.PriorityQueue;
 public class TestingMod {
 	public static void main(String[] args) {
 		System.out.println("zero mod 3: " + 0%3);
@@ -8,6 +9,7 @@ public class TestingMod {
 		int[] arr = {1, 2, 3, 4, 5};
 		//easyMethod2(arr, 0, arr.length);
 		testingIterators();
+		priorityQueueTesting();
 	}
 
 	public static void easyMethod2(int[] array, int low, int high) {
@@ -32,5 +34,15 @@ public class TestingMod {
 		for (int i : list)
 			System.out.print(i + " ");
 		System.out.print(it.hasNext() + "\n");
+	}
+
+	public static void priorityQueueTesting() {
+		int[] ia = { 1, 10, 5, 3, 4, 7, 6, 9, 8 };
+		PriorityQueue<Integer> pq = new PriorityQueue<>();
+		for (int i : ia)
+			pq.add(i);
+		System.out.println(pq);
+		for (int i = 0; i < ia.length; i++)
+			System.out.print(pq.remove() + " ");
 	}
 }
