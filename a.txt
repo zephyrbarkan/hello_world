@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 something finally different
+=======
+test
+>>>>>>> b20836f7ccd110c13aa93706588b48bb380b8f46
